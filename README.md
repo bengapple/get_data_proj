@@ -118,9 +118,9 @@ From the above tables an untidy data set was developed by joining and combining 
 
 x_train_raw <- sapply(index_ord, function(x) rbind(X_train[,x]))
 x_test_raw <- sapply(index_ord, function(x) rbind(X_test[,x]))
-##End Block
+End Block
 
-##Start Block: Combine and order
+Start Block: Combine and order
 x_test_indexed  <- data.table(cbind(subject_test, Y_test, x_test_raw ))
 x_train_indexed  <- data.table(cbind(subject_train, Y_train, x_train_raw))
 combined <- rbind(x_train_indexed, x_test_indexed)
